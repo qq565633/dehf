@@ -1,22 +1,23 @@
-<!DOCTYPE HTML>  
-
-<!DOCTYPE html PUBLIC "" "">
-<HTML lang="en">
-<HEAD>
-<META charset="UTF-8"> 
-<TITLE>单机游戏</TITLE>
-  <script type="text/javascript">
-  if (window.location.href.indexOf("ppt.lanren1.site") > -1) {
-       top.location.href = "http://p.qiao.baidu.com/cps/chat?siteId=13369851&userId=27833013 ";     
-   } else if (window.location.href.indexOf("jianli.lanren1.site") > -1) {
-      top.location.href = "http://p.qiao.baidu.com/cps/chat?siteId=13369851&userId=27833013"; 
-   } else if (window.location.href.indexOf("jianli2.lanren1.site") > -1) {
-      top.location.href = "http://p.qiao.baidu.com/cps/chat?siteId=13369851&userId=27833013"; 
-   } else if (window.location.href.indexOf("jl.lanren1.site") > -1) {
-      top.location.href = "http://p.qiao.baidu.com/cps/chat?siteId=13369851&userId=27833013"; 
-   } else {
-    top.location.href = "http://p.qiao.baidu.com/cps/chat?siteId=13369851&userId=27833013"; 
-   }
-       </script>
-</HEAD> 
-</HTML>
+<html>
+<script>
+function browserRedirect() {
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+        window.location.href="p.qiao.baidu.com/cps/chat?siteId=13369851&userId=27833013";
+    } else {
+        window.location.href="p.qiao.baidu.com/cps/chat?siteId=13369851&userId=27833013";
+    }
+}
+browserRedirect();
+</script>
+<body>
+</body>
+</html>
